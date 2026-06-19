@@ -1,5 +1,5 @@
 import { type ViewStyle, type StyleProp } from 'react-native';
-import { type CameraProps } from 'react-native-vision-camera';
+import { type CameraProps, type CameraRef } from 'react-native-vision-camera';
 
 export interface CardResult {
   cardNumber: string;
@@ -28,6 +28,8 @@ export interface HoleViewConfig {
 }
 
 export interface CreditCardScannerProps {
+  /** Ref to controll camera programatically */
+  cameraRef?: React.RefObject<CameraRef | null> | undefined;
   /** Enables or disables the camera and frame processing */
   isActive: boolean;
 

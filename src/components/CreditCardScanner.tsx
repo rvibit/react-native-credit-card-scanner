@@ -8,6 +8,7 @@ const width = Dimensions.get('window').width * 0.95;
 const height = width / 1.586;
 
 export const CreditCardScanner: React.FC<CreditCardScannerProps> = ({
+  cameraRef,
   isActive,
   onScanSuccess,
   onError,
@@ -42,6 +43,7 @@ export const CreditCardScanner: React.FC<CreditCardScannerProps> = ({
   return (
     <View style={[styles.container, style]}>
       <Camera
+        ref={cameraRef}
         style={StyleSheet.absoluteFill}
         device={device}
         isActive={isActive}
