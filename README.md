@@ -182,6 +182,15 @@ export default function App() {
 }
 ```
 
+## Acknowledgments
+
+This library depends on several awesome packages by community, Thanks to the authors of these libraries for making this possible.
+
+- [react-native-vision-camera](https://github.com/mrousavy/react-native-vision-camera)
+- [react-native-vision-camera-ocr-plus](https://github.com/jamenamcinteer/react-native-vision-camera-ocr-plus)
+- [react-native-hole-view](https://github.com/ibitcy/react-native-hole-view)
+- [react-native-worklets](https://docs.swmansion.com/react-native-worklets)
+
 ## Contributing
 
 - [Development workflow](CONTRIBUTING.md#development-workflow)
